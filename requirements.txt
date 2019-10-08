@@ -4,3 +4,22 @@ django-tables2==2.1.1
 pytz==2019.3
 sqlparse==0.3.0
 static3==0.7.0
+
+# Django
+django-appconf==1.0.3                   # Helper for handling app configs
+django-dynamic-preferences==1.7.1       # Settings management
+django-extensions==2.2.1                # For the generate secret command
+django-formtools==2.1                   # Form wizards
+django-ipware==2.1.0                    # IP Address logging
+django-jet==1.0.8                       # Admin Backend
+django-gfklookupwidget==1.0.7           # Replaces object_id field with a search link
+djangorestframework==3.10.2             # For serialising objects
+django-polymorphic==2.1.2               # Permits model polymorphism
+django-split-settings==0.3.0            # Modularise settings files
+django-statici18n==1.8.3                # Compile translations files as static file
+django-summernote==0.8.11.4             # WYSIWYG editor
+munkres==1.1.2                          # Algorithm for adjudicator allocation
+dj-cmd==1.0                             # Provides the dj command alias
+
+# Database
+psycopg2-binary==2.8.3                  # For Django to talk to postgres

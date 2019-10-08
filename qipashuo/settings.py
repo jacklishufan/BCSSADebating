@@ -122,7 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # Configure Django App for Heroku.
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #heroku设置
 cwd=os.getcwd()#获取当前的工作目录
 #确保这个设置文件在本地和在线都能使用，只有部署到kuroku才会执行if
