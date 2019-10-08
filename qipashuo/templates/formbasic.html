@@ -1,0 +1,40 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" action="submitballot">
+    <p>
+        User Name:
+        <input type="text" name="name">
+
+
+        <a href="speakers" class="button">Speakers</a>
+        <a href="users_public" class="button">Ballots</a>
+    </p>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Speaker Name</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{ formset.management_form }}
+      {% for i in formset %}
+      <tr>
+      <th scope="row">Speech {{ forloop.counter }}</th>
+      <td>{{i.speaker_name}}</td>
+      <td>{{i.speaker_score}}</td>
+      </tr>
+    {% endfor %}
+
+  </tbody>
+</table>
+ <button type="submit" class="btn btn-success">Submit</button>
+  {% csrf_token %}
+</form>
+
+{% endblock %}
