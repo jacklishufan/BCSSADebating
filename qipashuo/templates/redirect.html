@@ -1,16 +1,17 @@
 <body>
-<p>{{ msg }}<span id="sp">Redirecting in 5s</span></p>
+<p>{{ msg }}<span id="sp">Redirecting in 2s</span></p>
 <script>
     onload=function () {
         setInterval(go,1000)
     };
-    var x=4;
+    var x=2;
     function go() {
 
         if (x>=0){
             document.getElementById("sp").innerText=x;
         }else {
-            location.href="/";
+
+            location.href="{{target}}";
         }
         x--;
     }

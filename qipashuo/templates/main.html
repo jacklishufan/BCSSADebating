@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+          <div class="jumbotron">
+            <h1>奇葩说初赛投票系统</h1>
+            <p>The Motions Before This House Are As Follows:</p>
+          </div>
+<div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+          {% for motion in motionlist%}
+        <div class="col-md-4">
+          <h2>MOTION {{motion.id}}</h2>
+          <p>{{motion.name}} </p>
+          <p><a class="btn btn-default" href="/poll/{{motion.id}}" role="button">Vote</a></p>
+       </div>
+         {% endfor %}
+      </div>
+
+
+
+    </div>
+{% endblock %}

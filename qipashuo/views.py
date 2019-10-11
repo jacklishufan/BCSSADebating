@@ -14,11 +14,18 @@ from .tables import SpeakerTable,UserTable,UserTablePublic
 
 def people(request):
     table = UserTable(User.objects.all())
-    return render(request, 'tabletest.html', {'table': table})
+    return render(request, 'tabletest.html', {'table': table,'nav':'ballot'})
 
 def peoplePublic(request):
-    table = UserTablePublic(User.objects.all())
-    return render(request, 'tabletest.html', {'table': table})
+    if 'sort' in request.GET:
+        sort = request.GET['sort']
+        table = UserTablePublic(User.objects.all(),order_by=(sort, ))
+    else:
+        table = UserTablePublic(User.objects.all())
+    return render(request, 'tabletest.html', {'table': table, 'nav': 'ballot'})
+
+def root_main(request):
+    return render(request, 'main.html', {'motionlist':Round.objects.all()})
 
 class PersonListView(SingleTableView):
     model = Speaker
@@ -26,10 +33,15 @@ class PersonListView(SingleTableView):
     template_name = 'tabletest.html'
 
 def getPersonTable(request):
+    sort = 'name'
+    if 'sort' in request.GET:
+        sort = request.GET['sort']
+        print(sort)
     for s in Speaker.objects.all():
         s.avg = s.get_avg
         s.save()
-    return PersonListView.as_view()(request)
+    table = SpeakerTable(Speaker.objects.all(),order_by=(sort, ))
+    return render(request, 'tabletest.html', {'table': table, 'nav': 'speakers'})
 
 
 class UserView(SingleTableView):
@@ -51,12 +63,26 @@ class UserViewPublic(SingleTableView):
 #     template_name = 'formbasic.html'
 #     success_url = ''
 
-def BallotView(request):
-    form = forms.formset_factory(BallotForm,extra=10)
-    form = form()
+def BallotView(request,round_num = 1):
+    try:
+        this_round = Round.objects.get(round_id = round_num)
+        obj_set = this_round.speakers
+    except:
+        obj_set = Speaker.objects
+        this_round = Round()
+
+    this_form = forms.formset_factory(BallotForm,extra=10)
+    this_form = this_form()
+    round_total = range(1,1+len(Round.objects.all()))
+    for form in this_form:
+        form.set_entries(obj_set)
     print("REQUESTING")
    # print(request.POST)
-    return render(request,'formbasic.html',{'formset': form})
+    return render(request,'formbasic.html',{'formset': this_form,
+                                            'nav':'home',
+                                            'round_id':round_num,
+                                            'round_name':this_round.name,
+                                            'round_total':round_total})
 
 def user_exist(thisname):
     if User.objects.filter(name=thisname).exists():
@@ -67,7 +93,8 @@ def submit_ballot(request):
     print(request.POST['name'])
     usr_name = request.POST['name']
     if user_exist(usr_name):
-        return render(request,'redirect.html',{"msg":"User Has Submitted,Please Contact Admin"})
+        return render(request,'redirect.html',{"msg":"User Has Submitted,Please Contact Admin",
+                                               'target':'/poll'})
     print(request.POST)
     this_usr = User()
     this_usr.name = usr_name
@@ -94,7 +121,8 @@ def submit_ballot(request):
     #new_ballot.save()
 
 
-    return render(request,'redirect.html',{})
+    return render(request,'redirect.html',{'msg':"Submission Successful",
+                                                 'target':'/poll'})
     return HttpResponse("Hello Word")
 
 def del_user(request,userid):
@@ -105,4 +133,4 @@ def del_user(request,userid):
     this_user=this_user[0]
     this_user.clear_vote()
     this_user.delete()
-    return render(request,'redirect.html',{})
+    return render(request,'redirect.html',{'target':'/users'})

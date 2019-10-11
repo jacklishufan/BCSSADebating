@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77552e5f-4cba-4993-af9f-3cdee8205a89" name="Default Changelist" comment="">
+    <list default="true" id="77552e5f-4cba-4993-af9f-3cdee8205a89" name="Default Changelist" comment="&#10;ddd">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09a56fc2-4dff-4d34-90a7-2f176f7953f3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1573439f-a217-48de-8f3f-24723b797ea0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qipashuo/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qipashuo/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qipashuo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qipashuo/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qipashuo/templates/formbasic.html" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/templates/formbasic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qipashuo/templates/redirect.html" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/templates/redirect.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qipashuo/templates/tabletest.html" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/templates/tabletest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qipashuo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qipashuo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,19 +33,37 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
+        <entry file="file://$PROJECT_DIR$/qipashuo/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="61" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="61" />
-              <folding>
-                <element signature="e#84#93#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -41,71 +71,84 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qipashuo/templates/formbasic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="-85">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qipashuo/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/qipashuo/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="221">
+              <caret line="13" column="85" selection-start-line="13" selection-start-column="85" selection-end-line="13" selection-end-column="85" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/qipashuo/tables.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="-258">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
+        <entry file="file://$PROJECT_DIR$/qipashuo/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+            <state relative-caret-position="193">
+              <caret line="123" column="72" selection-start-line="123" selection-start-column="72" selection-end-line="123" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
+        <entry file="file://$PROJECT_DIR$/qipashuo/templates/redirect.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="40" />
+            <state relative-caret-position="17">
+              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qipashuo/wsgi.py">
+        <entry file="file://$PROJECT_DIR$/qipashuo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="264">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qipashuo/static/placeholder.txt">
+        <entry file="file://$PROJECT_DIR$/qipashuo/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            <state relative-caret-position="120">
+              <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runtime.txt">
+        <entry file="file://$PROJECT_DIR$/qipashuo/templates/tabletest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -113,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qipashuo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="13" selection-end-column="69" />
+            <state relative-caret-position="356">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding>
                 <element signature="e#632#664#0" expanded="true" />
               </folding>
@@ -127,29 +170,43 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>url</find>
-      <find>Dat</find>
-      <find>templ</find>
-      <find>admin</find>
-      <find>form</find>
-      <find>filter</find>
+      <find>peoplePublic</find>
+      <find>jumbo</find>
+      <find>&lt;nav&gt;</find>
+      <find>drop</find>
+      <find>ac</find>
+      <find>models.IntegerField()</find>
+      <find>get</find>
+      <find>BallotForm</find>
+      <find>models.IntegerField(</find>
+      <find>clear_vote(</find>
+      <find>a</find>
+      <find>clear_vote</find>
+      <find>vote</find>
+      <find>BaseForm</find>
+      <find>as_</find>
+      <find>post</find>
+      <find>as.view</find>
+      <find>as_v</find>
+      <find>speaker</find>
+      <find>this_round</find>
+      <find>PersonListView</find>
+      <find>ballot</find>
+      <find>round</find>
+      <find>red</find>
+      <find>redirec</find>
+      <find>Youcan</find>
+      <find>redirect</find>
       <find>avg</find>
-      <find>peop</find>
-      <find>django_heroku</find>
-      <find>dj-database-url</find>
-      <find>LOGG</find>
-      <find>blog</find>
-      <find>blo</find>
-      <find>tabl</find>
-      <find>dj_database_url</find>
-      <find>Timr</find>
+      <find>Jun</find>
+      <find>action</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,18 +220,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7c631ff5-669d-45a2-b763-c3e793c374d7/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7c631ff5-669d-45a2-b763-c3e793c374d7/console_1.sql" />
         <option value="$PROJECT_DIR$/qipashuo/__init__.py" />
-        <option value="$PROJECT_DIR$/qipashuo/templates/tabletest.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/qipashuo/admin.py" />
         <option value="$PROJECT_DIR$/qipashuo/templates/forms.py" />
         <option value="$PROJECT_DIR$/qipashuo/templates/frombasic.html" />
-        <option value="$PROJECT_DIR$/qipashuo/forms.py" />
-        <option value="$PROJECT_DIR$/qipashuo/templates/redirect.html" />
-        <option value="$PROJECT_DIR$/qipashuo/models.py" />
-        <option value="$PROJECT_DIR$/qipashuo/templates/formbasic.html" />
-        <option value="$PROJECT_DIR$/qipashuo/tables.py" />
-        <option value="$PROJECT_DIR$/qipashuo/views.py" />
-        <option value="$PROJECT_DIR$/qipashuo/urls.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/qipashuo/static/placeholder.txt" />
@@ -184,15 +232,25 @@
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/qipashuo/settings.py" />
+        <option value="$PROJECT_DIR$/qipashuo/admin.py" />
+        <option value="$PROJECT_DIR$/qipashuo/forms.py" />
+        <option value="$PROJECT_DIR$/qipashuo/tables.py" />
+        <option value="$PROJECT_DIR$/qipashuo/templates/tabletest.html" />
+        <option value="$PROJECT_DIR$/qipashuo/urls.py" />
+        <option value="$PROJECT_DIR$/qipashuo/templates/formbasic.html" />
+        <option value="$PROJECT_DIR$/qipashuo/views.py" />
+        <option value="$PROJECT_DIR$/qipashuo/templates/redirect.html" />
+        <option value="$PROJECT_DIR$/qipashuo/models.py" />
         <option value="$PROJECT_DIR$/qipashuo/templates/base.html" />
+        <option value="$PROJECT_DIR$/qipashuo/templates/main.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="434" />
+    <option name="x" value="354" />
     <option name="y" value="23" />
-    <option name="width" value="1500" />
-    <option name="height" value="785" />
+    <option name="width" value="1400" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -275,6 +333,9 @@
       <module name="BCSSADebating" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -310,7 +371,11 @@
       <workItem from="1570438756752" duration="5860000" />
       <workItem from="1570475650916" duration="1266000" />
       <workItem from="1570477214304" duration="285000" />
-      <workItem from="1570477576703" duration="35524000" />
+      <workItem from="1570477576703" duration="36010000" />
+      <workItem from="1570600744105" duration="1080000" />
+      <workItem from="1570603364367" duration="2319000" />
+      <workItem from="1570655886752" duration="780000" />
+      <workItem from="1570692926134" duration="23647000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570524474021</created>
@@ -372,7 +437,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45735000" />
+    <option name="totallyTimeSpent" value="74047000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -384,10 +449,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="434" y="23" width="1500" height="785" extended-state="0" />
+    <frame x="354" y="23" width="1400" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24622771" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26067746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -400,17 +465,17 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49931413" weight="0.32900432" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50548697" side_tool="true" visible="true" weight="0.4227994" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49451303" visible="true" weight="0.4227994" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49657065" weight="0.32756132" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5125184" side_tool="true" visible="true" weight="0.2300406" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4874816" visible="true" weight="0.2300406" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49484536" weight="0.32746956" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32882273" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.30452675" />
+      <window_info anchor="right" id="R Packages" order="5" visible="true" weight="0.3298969" />
+      <window_info anchor="right" id="Database" order="6" weight="0.30338734" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,38 +498,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7c631ff5-669d-45a2-b763-c3e793c374d7/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7c631ff5-669d-45a2-b763-c3e793c374d7/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.sqlite3">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/09a56fc2-4dff-4d34-90a7-2f176f7953f3/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1573439f-a217-48de-8f3f-24723b797ea0/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/new_file">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://7c631ff5-669d-45a2-b763-c3e793c374d7/schema/main/table/qipashuo_index.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/new_file" />
+    <entry file="das://7c631ff5-669d-45a2-b763-c3e793c374d7/schema/main/table/qipashuo_index.sql" />
     <entry file="das://7c631ff5-669d-45a2-b763-c3e793c374d7/schema/main/table/qipashuo_scoring.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -569,19 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -603,15 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://7c631ff5-669d-45a2-b763-c3e793c374d7/schema/main/table/qipashuo_round_speakers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://7c631ff5-669d-45a2-b763-c3e793c374d7/schema/main/table/qipashuo_ballot_scorings">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -627,16 +643,6 @@
           <filtering enabled="true">
             <filter text="" />
           </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,57 +664,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/models.py">
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/Pipfile" />
+    <entry file="file://$PROJECT_DIR$/root/urls.py" />
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="645">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/templates/redirect.html">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="9" />
+        <state>
+          <caret column="13" selection-start-column="5" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/templates/tabletest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/tables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#964#1232#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pipfile">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/static/placeholder.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -717,44 +688,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/root/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="13" selection-end-column="69" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runtime.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="40" />
+          <caret selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="61" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="13" />
           <folding>
             <element signature="e#84#93#0" expanded="true" />
           </folding>
@@ -763,36 +707,158 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="240">
           <caret line="16" column="14" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+    <entry file="das://7c631ff5-669d-45a2-b763-c3e793c374d7/schema/main/table/qipashuo_round_speakers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="164">
           <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/templates/formbasic.html">
+    <entry file="file://$PROJECT_DIR$/qipashuo/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="75" column="11" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django_tables2/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="150" column="41" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="41" />
+          <folding>
+            <element signature="e#2951#3295#0" />
+            <element signature="e#3340#3697#0" />
+            <element signature="e#3737#4223#0" />
+            <element signature="e#4265#4659#0" />
+            <element signature="e#4711#5032#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="176" column="69" selection-start-line="176" selection-start-column="69" selection-end-line="176" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="123" column="72" selection-start-line="123" selection-start-column="72" selection-end-line="123" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/templates/redirect.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/templates/tabletest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="350">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/templates/formbasic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="85" selection-start-line="13" selection-start-column="85" selection-end-line="13" selection-end-column="85" />
         </state>
       </provider>
     </entry>

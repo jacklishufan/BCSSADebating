@@ -3,15 +3,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<form method="post" action="submitballot">
-    <p>
-        User Name:
-        <input type="text" name="name">
+<div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>奇葩说初赛投票系统</h1>
+              {% if round_name%}
+              <p>本轮辩题: {{round_name}}</p>
+              {% endif %}
+            <p>Please socre each speech within a range bteween 0-100</p>
+          </div>
+            <form method="post" action="/submitballot">
 
 
-        <a href="speakers" class="button">Speakers</a>
-        <a href="users_public" class="button">Ballots</a>
-    </p>
+        <input type="text" name="name" class="form-control" placeholder="Username:i.e. Jack Li">
+
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -37,4 +46,21 @@
   {% csrf_token %}
 </form>
 
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+              {% for i in round_total %}
+              <!--
+              {{round_id}}
+              {{i|stringformat:'d'}}-->
+              <a href="/poll/{{i}}" class="list-group-item {% if round_id == i|stringformat:'d' %}active {% endif %}">ROUND {{i}}</a>
+
+              {% endfor %}
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div>
+ <p>
+
+</p>
 {% endblock %}

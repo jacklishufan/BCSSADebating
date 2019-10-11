@@ -24,9 +24,13 @@ class Speaker(models.Model):
     @property
     def get_avg(self):
         score_list = [i for i in self.scoring_set.all()]
+        if len(score_list) ==0:
+            return 0
         return sum([i.score for i in score_list])/len(score_list)
 
 class Round(models.Model):
+    round_id = models.IntegerField(default=0)
+    name = models.CharField(max_length=200,default="")
     speakers = models.ManyToManyField(Speaker)
 
 class Scoring(models.Model):

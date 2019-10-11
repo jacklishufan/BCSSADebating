@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path,include, re_path
 from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,6 +23,7 @@ urlpatterns = [
     path('speakers', views.getPersonTable),
     path('users_public', views.peoplePublic),
     path('users', views.people),
-    path('', views.BallotView,name='root'),
+    path('', views.root_main,name='root'),
+    re_path(r'^poll/(?P<round_num>\d+)?$', views.BallotView,name='root'),
     path('submitballot', views.submit_ballot),
 ]
