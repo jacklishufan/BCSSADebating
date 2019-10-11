@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77552e5f-4cba-4993-af9f-3cdee8205a89" name="Default Changelist" comment="&#10;ddd">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qipashuo/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qipashuo/templates/formbasic.html" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/templates/formbasic.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qipashuo/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+            <state relative-caret-position="353">
+              <caret line="82" selection-start-line="82" selection-end-line="88" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -59,11 +62,31 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qipashuo/templates/formbasic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+            <state relative-caret-position="153">
+              <caret line="9" column="100" selection-start-line="9" selection-start-column="100" selection-end-line="9" selection-end-column="100" />
               <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="120" column="52" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qipashuo/static/canvas.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -120,34 +143,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qipashuo/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qipashuo/templates/tabletest.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qipashuo/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-              <folding>
-                <element signature="e#632#664#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -164,12 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jumbo</find>
-      <find>&lt;nav&gt;</find>
-      <find>drop</find>
-      <find>ac</find>
-      <find>models.IntegerField()</find>
-      <find>get</find>
       <find>BallotForm</find>
       <find>models.IntegerField(</find>
       <find>clear_vote(</find>
@@ -191,9 +184,15 @@
       <find>Youcan</find>
       <find>redirect</find>
       <find>avg</find>
-      <find>Jun</find>
       <find>action</find>
       <find>score</find>
+      <find>Toggle nav</find>
+      <find>offcanvas</find>
+      <find>canvas</find>
+      <find>active</find>
+      <find>static</find>
+      <find>row-offcanvas</find>
+      <find>Jun</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -227,8 +226,10 @@
         <option value="$PROJECT_DIR$/qipashuo/views.py" />
         <option value="$PROJECT_DIR$/qipashuo/templates/redirect.html" />
         <option value="$PROJECT_DIR$/qipashuo/models.py" />
-        <option value="$PROJECT_DIR$/qipashuo/templates/base.html" />
         <option value="$PROJECT_DIR$/qipashuo/templates/main.html" />
+        <option value="$PROJECT_DIR$/qipashuo/templates/check.html" />
+        <option value="$PROJECT_DIR$/qipashuo/static/canvas.css" />
+        <option value="$PROJECT_DIR$/qipashuo/templates/base.html" />
         <option value="$PROJECT_DIR$/qipashuo/templates/formbasic.html" />
       </list>
     </option>
@@ -257,6 +258,12 @@
               <item name="BCSSADebating" type="b2602c69:ProjectViewProjectNode" />
               <item name="BCSSADebating" type="462c0819:PsiDirectoryNode" />
               <item name="qipashuo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BCSSADebating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BCSSADebating" type="462c0819:PsiDirectoryNode" />
+              <item name="qipashuo" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BCSSADebating" type="b2602c69:ProjectViewProjectNode" />
@@ -362,7 +369,7 @@
       <workItem from="1570600744105" duration="1080000" />
       <workItem from="1570603364367" duration="2319000" />
       <workItem from="1570655886752" duration="780000" />
-      <workItem from="1570692926134" duration="24336000" />
+      <workItem from="1570692926134" duration="26544000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570524474021</created>
@@ -424,7 +431,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74736000" />
+    <option name="totallyTimeSpent" value="76944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,10 +492,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1573439f-a217-48de-8f3f-24723b797ea0/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new_file" />
     <entry file="das://7c631ff5-669d-45a2-b763-c3e793c374d7/schema/main/table/qipashuo_index.sql" />
     <entry file="das://7c631ff5-669d-45a2-b763-c3e793c374d7/schema/main/table/qipashuo_scoring.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -708,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -793,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/templates/redirect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/tables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-258">
@@ -824,10 +813,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/qipashuo/templates/redirect.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        <state relative-caret-position="17">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/templates/check.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="90" column="48" lean-forward="true" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
+          <folding>
+            <element signature="e#3307#3314#0" expanded="true" />
+            <element signature="e#3777#3784#0" expanded="true" />
+            <element signature="e#4247#4254#0" expanded="true" />
+            <element signature="e#4717#4724#0" expanded="true" />
+            <element signature="e#5187#5194#0" expanded="true" />
+            <element signature="e#5657#5664#0" expanded="true" />
+            <element signature="e#6593#6599#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -838,12 +843,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/static/canvas.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="120" column="52" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="82" selection-start-line="82" selection-end-line="88" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/templates/formbasic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        <state relative-caret-position="153">
+          <caret line="9" column="100" selection-start-line="9" selection-start-column="100" selection-end-line="9" selection-end-column="100" />
           <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#!!top" />
           </folding>
         </state>
       </provider>
