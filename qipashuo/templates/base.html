@@ -51,7 +51,9 @@
         <li {% if nav == "home" %} class="active" {% endif %} ><a href="/poll">Vote</a></li>
         <li {% if nav == "speakers" %} class="active" {% endif %} ><a href="/speakers">Speakers</a></li>
         <li {% if nav == "ballot" %} class="active" {% endif %} ><a href="/users_public">Ballots</a></li>
-{% endblock %}
+        <li {% if nav == "rubic" %} class="active" {% endif %} ><a href="/ruby">Rubic</a></li>
+
+   {% endblock %}
           </ul>
 
         </div><!--/.navbar-collapse -->

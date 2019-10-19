@@ -19,8 +19,10 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('del/<userid>/',views.del_user,name='delete_user'),
+    path('del/<userid>/', views.del_user, name='delete_user'),
     # path('polls/', include('qipashuo.urls')),
     path('speakers', views.getPersonTable),
+    path('ruby', views.getRuby),
     path('users_public', views.peoplePublic),
     path('users', views.people),
     path('', views.root_main,name='root'),

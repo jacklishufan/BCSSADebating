@@ -91,8 +91,15 @@ def user_exist(thisname):
 def submit_ballot(request):
     print("REQUESTING")
     print(request.POST['name'])
-    usr_name = request.POST['name']
-    if user_exist(usr_name):
+
+    try:
+        round_num = request.POST['round_id']
+    except:
+        round_num = "default"
+
+    usr_name = request.POST['name']+'_round{}'.format(round_num)
+
+    if user_exist(usr_name) or not request.POST['name']:
         return render(request,'redirect.html',{"msg":"User Has Submitted,Please Contact Admin",
                                                'target':'/poll'})
     print(request.POST)
@@ -134,3 +141,8 @@ def del_user(request,userid):
     this_user.clear_vote()
     this_user.delete()
     return render(request,'redirect.html',{'target':'/users'})
+
+def getRuby(request):
+
+    return render(request,'ruby.html',{'nav':'rubic',
+                                           })
