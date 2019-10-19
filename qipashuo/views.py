@@ -71,7 +71,7 @@ def BallotView(request,round_num = 1):
         obj_set = Speaker.objects
         this_round = Round()
 
-    this_form = forms.formset_factory(BallotForm,extra=10)
+    this_form = forms.formset_factory(BallotForm,extra=30)
     this_form = this_form()
     round_total = range(1,1+len(Round.objects.all()))
     for form in this_form:

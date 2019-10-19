@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77552e5f-4cba-4993-af9f-3cdee8205a89" name="Default Changelist" comment="&#10;ddd">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/templates/formbasic.html" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/templates/formbasic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qipashuo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="16">
@@ -101,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qipashuo/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="99" column="54" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+            <state relative-caret-position="323">
+              <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -202,9 +196,9 @@
       <find>ALLOWED_HOSTS</find>
       <find>rub</find>
       <find>get</find>
-      <find>static</find>
       <find>id</find>
       <find>request.P</find>
+      <find>static</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -242,15 +236,15 @@
         <option value="$PROJECT_DIR$/qipashuo/urls.py" />
         <option value="$PROJECT_DIR$/qipashuo/templates/base.html" />
         <option value="$PROJECT_DIR$/qipashuo/templates/formbasic.html" />
-        <option value="$PROJECT_DIR$/qipashuo/views.py" />
         <option value="$PROJECT_DIR$/qipashuo/templates/ruby.html" />
         <option value="$PROJECT_DIR$/qipashuo/settings.py" />
+        <option value="$PROJECT_DIR$/qipashuo/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="96" />
-    <option name="y" value="48" />
+    <option name="x" value="164" />
+    <option name="y" value="36" />
     <option name="width" value="1400" />
     <option name="height" value="786" />
   </component>
@@ -386,7 +380,7 @@
       <workItem from="1570692926134" duration="26949000" />
       <workItem from="1570920927404" duration="3465000" />
       <workItem from="1570925820779" duration="3588000" />
-      <workItem from="1571514621175" duration="3180000" />
+      <workItem from="1571514621175" duration="3876000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570524474021</created>
@@ -448,7 +442,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87582000" />
+    <option name="totallyTimeSpent" value="88278000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,7 +454,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="96" y="48" width="1400" height="786" extended-state="0" />
+    <frame x="164" y="36" width="1400" height="786" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2658321" />
@@ -873,20 +867,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="99" column="54" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
