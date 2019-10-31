@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77552e5f-4cba-4993-af9f-3cdee8205a89" name="Default Changelist" comment="&#10;ddd">
-      <change beforePath="$PROJECT_DIR$/qipashuo/static/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/static/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/static/bootstrap-grid.min.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/qipashuo/templates/grandfinal.html" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/templates/grandfinal.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,13 +98,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qipashuo/templates/grandfinal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="47" column="127" selection-start-line="47" selection-start-column="127" selection-end-line="47" selection-end-column="127" />
+            <state relative-caret-position="245">
+              <caret line="47" column="97" selection-start-line="47" selection-start-column="97" selection-end-line="47" selection-end-column="97" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -373,7 +369,7 @@
       <workItem from="1570920927404" duration="3465000" />
       <workItem from="1570925820779" duration="3588000" />
       <workItem from="1571514621175" duration="6323000" />
-      <workItem from="1572465845829" duration="16487000" />
+      <workItem from="1572465845829" duration="16685000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570524474021</created>
@@ -435,7 +431,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107212000" />
+    <option name="totallyTimeSpent" value="107410000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,7 +446,7 @@
     <frame x="43" y="23" width="1400" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.269514" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.269514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -459,13 +455,13 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49931413" weight="0.32900432" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49931413" weight="0.32866243" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49931413" weight="0.32900432" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49931413" weight="0.32866243" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5154639" side_tool="true" weight="0.22910663" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48453608" visible="true" weight="0.34140128" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.742268" weight="0.34870318" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48453608" visible="true" weight="0.34140128" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.742268" weight="0.3477707" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32882273" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -889,13 +885,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/templates/grandfinal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="47" column="127" selection-start-line="47" selection-start-column="127" selection-end-line="47" selection-end-column="127" />
+        <state relative-caret-position="245">
+          <caret line="47" column="97" selection-start-line="47" selection-start-column="97" selection-end-line="47" selection-end-column="97" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
