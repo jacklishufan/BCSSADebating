@@ -207,7 +207,7 @@ def submit_ballot_GF(request):
     # return HttpResponse("Hello Word")
     #return grandFinal(request)
 def getSpeakerRankTable(request):
-    sort = 'name'
+    sort = 'votes'
     if 'sort' in request.GET:
         sort = request.GET['sort']
         print(sort)
