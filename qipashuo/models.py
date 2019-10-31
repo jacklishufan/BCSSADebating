@@ -69,11 +69,15 @@ class GrandFinal(models.Model):
     @property
     def gov_percentage(self):
         sum = self.gov_vote+self.opp_vote
+        if not sum:
+            return "50%"
         return str(round(self.gov_vote/sum*100))+"%"
 
     @property
     def opp_percentage(self):
         sum = self.gov_vote + self.opp_vote
+        if not sum:
+            return "50%"
         return str(round(self.opp_vote / sum * 100)) + "%"
 
 
