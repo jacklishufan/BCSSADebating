@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77552e5f-4cba-4993-af9f-3cdee8205a89" name="Default Changelist" comment="&#10;ddd">
-      <change afterPath="$PROJECT_DIR$/qipashuo/templates/grandfinal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qipashuo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/static/canvas.css" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/static/canvas.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qipashuo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qipashuo/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +56,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qipashuo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qipashuo/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -158,15 +158,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qipashuo/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -205,10 +196,10 @@
       <find>user_exist</find>
       <find>FinalSpeaker</find>
       <find>csrf</find>
-      <find>avg</find>
       <find>if</find>
       <find>submit_ballot_GF</find>
       <find>vo</find>
+      <find>avg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -241,7 +232,6 @@
         <option value="$PROJECT_DIR$/qipashuo/templates/formbasic.html" />
         <option value="$PROJECT_DIR$/qipashuo/templates/ruby.html" />
         <option value="$PROJECT_DIR$/qipashuo/templates/main.html" />
-        <option value="$PROJECT_DIR$/qipashuo/settings.py" />
         <option value="$PROJECT_DIR$/qipashuo/static/canvas.css" />
         <option value="$PROJECT_DIR$/qipashuo/static/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/qipashuo/static/bootstrap.css" />
@@ -252,6 +242,7 @@
         <option value="$PROJECT_DIR$/qipashuo/urls.py" />
         <option value="$PROJECT_DIR$/qipashuo/templates/grandfinal.html" />
         <option value="$PROJECT_DIR$/qipashuo/views.py" />
+        <option value="$PROJECT_DIR$/qipashuo/settings.py" />
       </list>
     </option>
   </component>
@@ -394,7 +385,7 @@
       <workItem from="1570920927404" duration="3465000" />
       <workItem from="1570925820779" duration="3588000" />
       <workItem from="1571514621175" duration="6323000" />
-      <workItem from="1572465845829" duration="14040000" />
+      <workItem from="1572465845829" duration="14469000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1570524474021</created>
@@ -456,7 +447,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104765000" />
+    <option name="totallyTimeSpent" value="105194000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,7 +462,7 @@
     <frame x="43" y="23" width="1400" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.269514" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.269514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -485,7 +476,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49931413" weight="0.32900432" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5154639" side_tool="true" weight="0.22910663" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48453608" visible="true" weight="0.20254777" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48453608" visible="true" weight="0.20254777" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.742268" weight="0.34870318" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32882273" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -778,13 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qipashuo/tables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -893,6 +877,13 @@
             <element signature="e#0#36#0" expanded="true" />
             <element signature="e#2899#4329#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qipashuo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
