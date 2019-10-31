@@ -146,3 +146,63 @@ def getRuby(request):
 
     return render(request,'ruby.html',{'nav':'rubic',
                                            })
+
+def grandFinal(request):
+    gf = GrandFinal.objects.all()[0]
+    new_form = FinalBallotForm()
+    return render(request,'grandfinal.html',{'nav':'rubic',
+                                             'forms':new_form,
+                                             'gf':gf
+                                           })
+def resultShow(request):
+    gf = GrandFinal.objects.all()[0]
+    new_form = FinalBallotForm()
+    return render(request,'grandfinal.html',{'nav':'rubic',
+                                             'forms':new_form,
+                                             'gf':gf,
+                                             'update':'true'
+                                           })
+def getUserIP(request):
+    # 获取客户端IP
+    if 'HTTP_X_FORWARDED_FOR' in request.META:
+        return request.META['HTTP_X_FORWARDED_FOR']
+    else:
+        return request.META['REMOTE_ADDR']
+
+def submit_ballot_GF(request):
+    print("REQUESTING")
+    gf = GrandFinal.objects.all()[0]
+    usrip = getUserIP(request)
+    print(usrip)
+    # if FinalVoter.objects.filter(ip=usrip).exists():
+    #     return render(request,'redirect.html',{"msg":"User Has Submitted,Please Contact Admin",
+    #                                            'target':'/gf'})
+    print(request.POST)
+    this_usr = FinalVoter()
+    this_usr.ip = usrip
+   # this_usr.save()
+    print("DEBUG CHECKPOINT A")
+    rep_form = FinalBallotForm(request.POST)
+
+    if rep_form.is_valid():
+        best_speaker = rep_form.cleaned_data.get('best_speaker')
+        winner = rep_form.cleaned_data.get('winner')
+        print(rep_form)
+        if winner == 'AFF':
+            gf.gov_vote = gf.gov_vote+1
+            gf.save()
+        elif winner == 'NEG':
+            gf.opp_vote = gf.opp_vote+1
+            gf.save()
+        best_speaker.votes = best_speaker.votes+1
+        best_speaker.save()
+        this_usr.best_speaker = best_speaker
+        this_usr.voted_team = winner
+        this_usr.save()
+    else:
+        print("FAIL",rep_form.errors)
+
+    return render(request,'redirect.html',{'msg':"Submission Successful",
+                                                  'target':'/gf'})
+    # return HttpResponse("Hello Word")
+    #return grandFinal(request)

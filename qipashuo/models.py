@@ -15,6 +15,7 @@ class User(models.Model):
                 score.delete()
             ballot.delete()
 
+
 class Speaker(models.Model):
     name = models.CharField(max_length=200)
     avg = models.FloatField(default=0)
@@ -45,6 +46,34 @@ class Ballot(models.Model):
     def __str__(self):
         return str([str(i) for i in self.scorings.all()])
 
+class FinalSpeaker(models.Model):
+    name = models.CharField(max_length=20)
+    votes = models.IntegerField(default=0)
+    def __str__(self):
+        return self.name
 
+class FinalVoter(models.Model):
+    ip = models.CharField(max_length=20)
+    time = models.DateTimeField(auto_now=True)
+    voted_team = models.CharField(max_length=20)
+    best_speaker = models.ForeignKey(FinalSpeaker, on_delete=models.CASCADE)
+
+
+class GrandFinal(models.Model):
+    gov_vote = models.IntegerField(default=0)
+    opp_vote = models.IntegerField(default=1)
+
+    @property
+    def global_sum(self):
+        return self.gov_vote+self.opp_vote
+    @property
+    def gov_percentage(self):
+        sum = self.gov_vote+self.opp_vote
+        return str(round(self.gov_vote/sum*100))+"%"
+
+    @property
+    def opp_percentage(self):
+        sum = self.gov_vote + self.opp_vote
+        return str(round(self.opp_vote / sum * 100)) + "%"
 
 
