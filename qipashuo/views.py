@@ -10,7 +10,7 @@ def index(request):
     return HttpResponse("Hello Word")
 
 from .models import Speaker
-from .tables import SpeakerTable,UserTable,UserTablePublic
+from .tables import SpeakerTable,UserTable,UserTablePublic,FinalSpeakerTable
 
 def people(request):
     table = UserTable(User.objects.all())
@@ -206,3 +206,10 @@ def submit_ballot_GF(request):
                                                   'target':'/gf'})
     # return HttpResponse("Hello Word")
     #return grandFinal(request)
+def getSpeakerRankTable(request):
+    sort = 'name'
+    if 'sort' in request.GET:
+        sort = request.GET['sort']
+        print(sort)
+    table = FinalSpeakerTable(FinalSpeaker.objects.all(),order_by=(sort, ))
+    return render(request, 'tabletest.html', {'table': table, 'update': 'true'})

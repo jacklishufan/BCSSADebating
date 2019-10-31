@@ -4,6 +4,7 @@
 
    {% endblock %}
 {% block content %}
+
 <div class="list-group mt-3">
 
         <div class="list-group-item disabled text-center ">
@@ -29,6 +30,7 @@ Perferable to a Short but Exceptional One
     <div class="col">
       <h4 class="mt-2 text-center text-muted">
         results from {{gf.global_sum}} votes
+
           <br/>
       </h4>
     </div>
@@ -115,10 +117,13 @@ Perferable to a Short but Exceptional One
 
           </div>
 
-
       </div>
 
+
+
+
 {% if update == "true" %}
+
 <script language="JavaScript">
 function myrefresh(){
    window.location.reload();

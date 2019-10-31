@@ -45,3 +45,21 @@ class UserTable(tables.Table):
 #         model = Person
 #         template_name = 'django_tables2/bootstrap.html'
 #        fields = ('id', 'name', )
+
+class FinalSpeakerTable(tables.Table):
+  #  average = tables.Column(accessor='get_avg')
+
+    # def render_average(self,record):
+    #     return str(record.get_avg)
+    #
+    # def order_clothing(self, queryset, is_descending):
+    #     queryset = queryset.annotate(
+    #         amount=tables.F("shirts") + tables.F("pants")
+    #     ).order_by(("-" if is_descending else ") + "amount")
+    #     return (queryset, True)
+
+    class Meta:
+        model = Speaker
+        attrs = {"text-aligned": "center"}
+        template_name = "django_tables2/bootstrap.html"
+        fields = ("name","votes")

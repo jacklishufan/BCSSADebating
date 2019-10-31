@@ -30,6 +30,7 @@ urlpatterns = [
     #path('', views.root_main,name='root'),
     path('', views.grandFinal),
     path('results', views.resultShow),
+    path('results/speaker',views.getSpeakerRankTable),
     re_path(r'^poll/(?P<round_num>\d+)?$', views.BallotView,name='root'),
     path('submitballot', views.submit_ballot),
 ]
