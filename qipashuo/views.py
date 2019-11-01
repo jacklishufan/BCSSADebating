@@ -174,9 +174,9 @@ def submit_ballot_GF(request):
     gf = GrandFinal.objects.all()[0]
     usrip = getUserIP(request)
     print(usrip)
-    # if FinalVoter.objects.filter(ip=usrip).exists():
-    #     return render(request,'redirect.html',{"msg":"User Has Submitted,Please Contact Admin",
-    #                                            'target':'/gf'})
+    if FinalVoter.objects.filter(ip=usrip).exists():
+        return render(request,'redirect.html',{"msg":"User Has Submitted,Please Contact Admin",
+                                               'target':'/gf'})
     print(request.POST)
     this_usr = FinalVoter()
     this_usr.ip = usrip
