@@ -55,11 +55,10 @@ class FinalSpeaker(models.Model):
 class FinalVoter(models.Model):
     ip = models.CharField(max_length=20)
     time = models.DateTimeField(auto_now=True)
-    voted_team = models.CharField(max_length=20)
-    best_speaker = models.ForeignKey(FinalSpeaker, on_delete=models.CASCADE)
-
+    type = models.CharField(max_length=20,default="N/A")
 
 class GrandFinal(models.Model):
+    name = models.CharField(max_length=20,default="N/A")
     gov_vote = models.IntegerField(default=0)
     opp_vote = models.IntegerField(default=1)
 

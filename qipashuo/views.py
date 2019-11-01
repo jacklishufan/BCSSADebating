@@ -5,7 +5,7 @@ from django import forms
 from django_tables2 import tables, SingleTableView
 from qipashuo.forms import *
 from django.shortcuts import render
-
+from os import environ as env
 def index(request):
     return HttpResponse("Hello Word")
 
@@ -146,21 +146,71 @@ def getRuby(request):
 
     return render(request,'ruby.html',{'nav':'rubic',
                                            })
-
 def grandFinal(request):
-    gf = GrandFinal.objects.all()[0]
+    if env['STAGE']=='FIRST_VOTE':
+        return grandFinalvote(request)
+    if env['STAGE']=='FIRST_VOTE_CLOSED':
+        return grandFinalvote(request,'closed')
+    elif env['STAGE'] == 'SECOND_VOTE':
+        return grandFinalvote2(request)
+    elif env['STAGE'] == 'SECOND_VOTE_CLOSED':
+        return grandFinalvote2(request,'closed')
+    else:
+        return resultShow(request,'false')
+
+
+def grandFinalvote(request,done='done'):
+    gf = GrandFinal.objects.get(name='old')
+    usrip = getUserIP(request)
+    if FinalVoter.objects.filter(ip = usrip, type = "INIT").exists() or done =='closed':
+        return render(request, 'grandfinal.html', {'nav': 'rubic',
+                                               'forms': 'false',
+                                               'gf': gf,
+                                               'first_vote':done
+                                               })
+    return render(request, 'grandfinal.html', {'nav': 'rubic',
+                                               'forms': 'false',
+                                               'gf': gf,
+                                               'first_vote':'true'
+                                               })
+def grandFinalvote2(request,done='done'):
+
+    gf = GrandFinal.objects.get(name='old')
+    gf2 = GrandFinal.objects.get(name='new')
     new_form = FinalBallotForm()
-    return render(request,'grandfinal.html',{'nav':'rubic',
-                                             'forms':new_form,
-                                             'gf':gf
-                                           })
-def resultShow(request):
-    gf = GrandFinal.objects.all()[0]
-    new_form = FinalBallotForm()
+    usrip = getUserIP(request)
+    if FinalVoter.objects.filter(ip=usrip, type="FINAL").exists() or done == 'closed':
+        return render(request, 'grandfinal.html', {'nav': 'rubic',
+                                                   'forms': new_form,
+                                                   'gf': gf,
+                                                   'gf2': gf2,
+                                                   'stage2': 'true',
+                                                   'first_vote': 'closed',
+                                                   '2nd_vote': done
+                                                   })
     return render(request,'grandfinal.html',{'nav':'rubic',
                                              'forms':new_form,
                                              'gf':gf,
-                                             'update':'true'
+                                             'gf2':gf2,
+                                             'stage2':'true',
+                                             'first_vote': 'closed',
+                                             '2nd_vote': 'true'
+                                           })
+def resultShow(request,update='false'):
+    sft = 'false'
+    if env['UPDATE']== 'true' :
+        update = 'true'
+    if env['STAGE'] not in ['FIRST_VOTE','FIRST_VOTE_CLOSED'] :
+        sft = 'true'
+    gf = GrandFinal.objects.get(name='old')
+    new_form = FinalBallotForm()
+    gf2 = GrandFinal.objects.get(name='new')
+    return render(request,'grandfinal.html',{'nav':'rubic',
+                                             'forms':new_form,
+                                             'gf':gf,
+                                             'gf2':gf2,
+                                             'stage2': sft,
+                                             'update':update
                                            })
 def getUserIP(request):
     # 获取客户端IP
@@ -171,15 +221,16 @@ def getUserIP(request):
 
 def submit_ballot_GF(request):
     print("REQUESTING")
-    gf = GrandFinal.objects.all()[0]
+    gf = GrandFinal.objects.get(name='new')
     usrip = getUserIP(request)
     print(usrip)
-    if FinalVoter.objects.filter(ip=usrip).exists():
+    if FinalVoter.objects.filter(ip=usrip,type="FINAL").exists():
         return render(request,'redirect.html',{"msg":"User Has Submitted,Please Contact Admin",
                                                'target':'/gf'})
     print(request.POST)
     this_usr = FinalVoter()
     this_usr.ip = usrip
+    this_usr.type = "FINAL"
    # this_usr.save()
     print("DEBUG CHECKPOINT A")
     rep_form = FinalBallotForm(request.POST)
@@ -196,8 +247,6 @@ def submit_ballot_GF(request):
             gf.save()
         best_speaker.votes = best_speaker.votes+1
         best_speaker.save()
-        this_usr.best_speaker = best_speaker
-        this_usr.voted_team = winner
         this_usr.save()
     else:
         print("FAIL",rep_form.errors)
@@ -213,3 +262,24 @@ def getSpeakerRankTable(request):
         print(sort)
     table = FinalSpeakerTable(FinalSpeaker.objects.all(),order_by=(sort, ))
     return render(request, 'tabletest.html', {'table': table, 'update': 'true'})
+
+def submit_ballot_init(request):
+    choice = request.POST['vote']
+    gf = GrandFinal.objects.get(name="old")
+    this_usr = FinalVoter()
+    this_usr.ip = getUserIP(request)
+    this_usr.type = "INIT"
+    this_usr.save()
+    if choice == "AFF":
+        gf.gov_vote = gf.gov_vote +1
+    if choice == "NEG":
+        gf.opp_vote = gf.opp_vote +1
+    gf.save()
+    print(choice)
+    return render(request,'redirect.html',{'msg':"Submission Successful",
+                                                  'target':'/gf'})
+def clearAllUser(request):
+    for i in FinalVoter.objects.all():
+        i.delete()
+    return render(request,'redirect.html',{'msg':"Deletion Successful",
+                                                  'target':'/gf'})

@@ -25,6 +25,8 @@ Perferable to a Short but Exceptional One
             </h3></div>
 
 
+     <div class="list-group-item  text-center ">
+                     <h2 style="color: #000000">Initial Result</h2>
             <div class="row">
   <div class="row">
     <div class="col">
@@ -80,7 +82,132 @@ Perferable to a Short but Exceptional One
           Neg: {{gf.opp_vote}} Votes
       </div>
 
-  {% if update != "true" %}
+
+  {% if first_vote == "done" %}
+  <div class="row">
+    <div class="col">
+      <h4 class="mt-2 text-center text-muted" style="color: #ff0000">
+        You have voted in this round.
+
+          <br/>
+      </h4>
+    </div>
+  </div>
+     {% endif %}
+  {% if first_vote == "closed" %}
+  <div class="row">
+    <div class="col">
+      <h4 class="mt-2 text-center text-muted" style="color: #ff0000">
+        This round of vote has been closed.
+
+          <br/>
+      </h4>
+    </div>
+  </div>
+     {% endif %}
+
+
+  </div>
+
+
+
+</div>
+
+
+
+            </div>
+
+          </div>
+
+      </div>
+
+  {% if first_vote == "true" %}
+<form method="post" action="/submit_ballot_init">
+
+
+                <div class="row">
+  <div class="row">
+    <div class="col">
+      <h4 class="mt-2 text-center text-muted">
+
+          <div><br/><br/>
+
+              Stance: <select name = "vote">
+  <option value ="AFF">Affirmative</option>
+  <option value ="NEG">Negative</option>
+</select>
+
+          </div>
+          <br/>
+       <button type="submit" style="background-color: #56bf8b;font-size: 18px" class="btn btn-success">Submit</button>
+       {% csrf_token %}
+      </h4>
+    </div>
+  </div>
+
+
+</form>
+      {% endif %}
+     {% if stage2 == "true" %}
+         <div class="list-group-item  text-center ">
+                     <h2 style="color: #000000">Final Result</h2>
+            <div class="row">
+  <div class="row">
+    <div class="col">
+      <h4 class="mt-2 text-center text-muted">
+        results from {{gf2.global_sum}} votes
+
+          <br/>
+      </h4>
+    </div>
+  </div>
+
+<div class="col-sm-12">
+<div class="progress" style="height: 40px">
+
+
+
+
+          <div class="progress-bar"  style="width: {{gf2.gov_percentage}}; background-color: #56bf8b;font-size: 20px" data-toggle="tooltip" title="" data-original-title="3 of 4 teams on OO (75%) advanced">
+
+              Affirmative {{gf2.gov_percentage}}
+
+          </div>
+          <div class="progress-bar" style="width: {{gf2.opp_percentage}};background-color: #d1355f;font-size: 20px" data-toggle="tooltip" title="" data-original-title="1 of 4 teams on OO (25%) were eliminated">
+
+              Negative {{gf2.opp_percentage}}
+
+          </div>
+
+        </div>
+    </div>
+
+
+<div class="col-sm-12">
+
+
+
+
+  <div class="row">
+
+
+
+      <div class="col-md-6 mb-6">
+
+        <h4 class="mt-2 text-center text-cg">
+          Aff: {{gf2.gov_vote}} Votes
+        </h4>
+      </div>
+
+
+
+      <div class="col-md-6 mb-6">
+
+        <h4 class="mt-2 text-center text-co">
+          Neg: {{gf2.opp_vote}} Votes
+      </div>
+
+   {% if 2nd_vote == "true" %}
 <form method="post" action="/submit_ballot_gf">
 
 
@@ -105,6 +232,29 @@ Perferable to a Short but Exceptional One
 
 </form>
       {% endif %}
+        {% if 2nd_vote == "done" %}
+  <div class="row">
+    <div class="col">
+      <h4 class="mt-2 text-center text-muted" style="color: #ff0000">
+        You have voted in this round.
+
+          <br/>
+      </h4>
+    </div>
+  </div>
+     {% endif %}
+
+        {% if 2nd_vote == "closed" %}
+  <div class="row">
+    <div class="col">
+      <h4 class="mt-2 text-center text-muted" style="color: #ff0000">
+        This round of vote has been closed.
+
+          <br/>
+      </h4>
+    </div>
+  </div>
+     {% endif %}
   </div>
 
 
@@ -118,7 +268,8 @@ Perferable to a Short but Exceptional One
           </div>
 
       </div>
-
+    {% endif %}
+</div>
 
 
 
