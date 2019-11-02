@@ -20,6 +20,6 @@ class FinalBallotForm(forms.Form):
                                           widget=forms.Select(attrs={'style': 'width:200px' })
                                           )
     winner = forms.ChoiceField(choices = [
-        ('AFF','Affirmative'),
-        ('NEG', 'Negative')
+        ('AFF','平凡慢慢'),
+        ('NEG', '精彩短暂')
     ])
